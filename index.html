@@ -38,108 +38,116 @@
   </head>
   <body class="bg-black text-white p-3 font-pop overflow-x-hidden">
     <!-- Container -->
-    <div class="w-full flex gap-4">
+    <div class="w-full flex lg:flex-row flex-col gap-4">
       <!-- Person Card -->
-      <div class="relative w-[23rem] min-w-[23rem]">
+      <div class="relative flex justify-center">
         <div
-          class="sticky top-3 border border-zinc-700 rounded-2xl bg-black-fade p-7 flex flex-col gap-8"
+          class="relative md:px-10 lg:px-0 md:w-[35rem] lg:w-[23rem] min-w-[23rem]"
         >
-          <!-- Header -->
-          <div class="flex items-start justify-between">
-            <h1 class="font-bold text-3xl flex flex-col gap-2 leading-none">
-              Udhav W.
-              <span class="font-normal text-[16px] pl-1 text-zinc-400"
-                >w_udhav</span
-              >
-            </h1>
-            <h3 class="text-[14px] font-medium text-right text-zinc-300">
-              Web Developer<br />MERN Stack
-            </h3>
-          </div>
+          <div
+            class="sticky top-3 border border-zinc-700 rounded-2xl bg-black-fade p-7 flex flex-col gap-8"
+          >
+            <!-- Header -->
+            <div class="flex items-start justify-between">
+              <h1 class="font-bold text-3xl flex flex-col gap-2 leading-none">
+                Udhav W.
+                <span class="font-normal text-[16px] pl-1 text-zinc-400"
+                  >w_udhav</span
+                >
+              </h1>
+              <h3 class="text-[14px] font-medium text-right text-zinc-300">
+                Web Developer<br />MERN Stack
+              </h3>
+            </div>
 
-          <!-- Image -->
-          <div class="w-full">
-            <img
-              src="./assets/images/me.jpg"
-              alt="Udhav's photo"
-              class="w-full rounded-xl"
-            />
-          </div>
-
-          <!-- Email, Location -->
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center gap-2">
-              <div class="w-6 flex justify-center">
-                <i class="fas fa-envelope text-zinc-400 text-xl"></i>
+            <div
+              class="flex flex-row lg:flex-col items-center lg:items-start gap-3 lg:gap-8"
+            >
+              <!-- Image -->
+              <div class="w-full">
+                <img
+                  src="./assets/images/me.jpg"
+                  alt="Udhav's photo"
+                  class="min-w-[5rem] w-20 lg:w-full rounded-full lg:rounded-xl"
+                />
               </div>
+
+              <!-- Email, Location -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 flex justify-center">
+                    <i class="fas fa-envelope text-zinc-400 text-xl"></i>
+                  </div>
+                  <a
+                    href="mailto:ambrewster24@gmail.com"
+                    class="text-zinc-300 hover:text-sky-500"
+                  >
+                    ambrewster24@gmail.com
+                  </a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-6 flex justify-center">
+                    <i class="fas fa-map-marker-alt text-zinc-400 text-xl"></i>
+                  </div>
+                  <p class="text-zinc-300">Chandigarh, India</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-4">
               <a
-                href="mailto:ambrewster24@gmail.com"
-                class="text-zinc-300 hover:text-sky-500"
+                href="https://twitter.com/angerastra"
+                target="_blank"
+                class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
               >
-                ambrewster24@gmail.com
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a
+                href="https://in.linkedin.com/in/w-udhav"
+                target="_blank"
+                class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
+              >
+                <i class="fab fa-linkedin-in text-[22px]"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/wudhav/"
+                target="_blank"
+                class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
+              >
+                <i class="fab fa-facebook-f text-[18px]"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/w_udhav/"
+                target="_blank"
+                class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
+              >
+                <i class="fab fa-instagram text-[22px]"></i>
+              </a>
+              <a
+                href="https://github.com/w-udhav"
+                target="_blank"
+                class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
+              >
+                <i class="fab fa-github text-[22px]"></i>
               </a>
             </div>
-            <div class="flex items-center gap-2">
-              <div class="w-6 flex justify-center">
-                <i class="fas fa-map-marker-alt text-zinc-400 text-xl"></i>
-              </div>
-              <p class="text-zinc-300">Chandigarh, India</p>
+
+            <!-- CTA -->
+            <div>
+              <button
+                class="w-full rounded-xl bg-sky-400 hover:bg-sky-600 transition-all text-black font-medium text-lg py-3"
+              >
+                Hire Me
+              </button>
             </div>
-          </div>
-
-          <!-- Social Links -->
-          <div class="flex items-center gap-4">
-            <a
-              href="https://twitter.com/angerastra"
-              target="_blank"
-              class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
-            >
-              <i class="fab fa-twitter text-xl"></i>
-            </a>
-            <a
-              href="https://in.linkedin.com/in/w-udhav"
-              target="_blank"
-              class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
-            >
-              <i class="fab fa-linkedin-in text-[22px]"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/wudhav/"
-              target="_blank"
-              class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
-            >
-              <i class="fab fa-facebook-f text-[18px]"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/w_udhav/"
-              target="_blank"
-              class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
-            >
-              <i class="fab fa-instagram text-[22px]"></i>
-            </a>
-            <a
-              href="https://github.com/w-udhav"
-              target="_blank"
-              class="text-zinc-300 hover:text-sky-500 hover:bg-zinc-600 p-2 border border-zinc-700 rounded-full w-10 h-10 flex justify-center items-center"
-            >
-              <i class="fab fa-github text-[22px]"></i>
-            </a>
-          </div>
-
-          <!-- CTA -->
-          <div>
-            <button
-              class="w-full rounded-xl bg-sky-400 hover:bg-sky-600 transition-all text-black font-medium text-lg py-3"
-            >
-              Hire Me
-            </button>
           </div>
         </div>
       </div>
 
       <!-- Content -->
       <div class="w-full flex justify-center py-10">
-        <div class="w-[47rem] flex flex-col gap-20">
+        <div class="w-[47rem] px-10 xl:px-0 flex flex-col gap-20">
           <!-- Section 1 -->
           <div class="flex flex-col gap-12">
             <!-- Topic Box -->
